@@ -60,6 +60,10 @@
   color: black;
 }
 
+.logo-icon {
+  border-radius: 50%;
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 850px) {
@@ -98,5 +102,9 @@
     margin: 10px;
     font-size: 20px;
     color: #f3f3f3;
+  }
+
+  .logo-icon {
+    visibility: hidden;
   }
 }

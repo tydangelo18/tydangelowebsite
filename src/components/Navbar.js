@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
-import logo from '../components/logo.png';
+import me from "../images/me.jpg"
+
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +16,7 @@ const Navbar = () => {
     <div className='Navbar'>
       <div className='leftSide'>
         <div className='logo'>
-          <img src={logo} width='43' height='43' alt='Ty DAngelo' />
+          <img className='logo-icon' src={me} width='75' height='75' alt='Ty DAngelo' />
         </div>
       </div>
 
