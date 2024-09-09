@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/ProjectCards.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import bol from "../images/bol.jpg";
-import shareplate from "../images/shareplate.jpg";
+import bol from "./bol.jpg";
+import shareplate from "./shareplate.jpg";
 
 const ProjectCards = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
-import me from "../images/me.jpg"
+import me from "./me.jpg"
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
