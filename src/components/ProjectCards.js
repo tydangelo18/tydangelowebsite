@@ -94,7 +94,7 @@ const ProjectCards = () => {
                 />
               </a>
               <a
-                href="https://github.com/tydangelo18/springboard-app"
+                href="https://github.com/tydangelo18/shareplate-api-server"
                 target="null"
               >
                 <FontAwesomeIcon
