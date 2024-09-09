@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tydangelowebsite/static/css/main.aa2feaf2.css",
-    "main.js": "/tydangelowebsite/static/js/main.e7a9e2ab.js",
-    "static/media/bol.jpg": "/tydangelowebsite/static/media/bol.b568d8d4d6e19e9a2dce.jpg",
-    "static/media/hello.jpg": "/tydangelowebsite/static/media/hello.728c35c806b599f605e4.jpg",
-    "static/media/me.jpg": "/tydangelowebsite/static/media/me.12df56afd16497a0a87c.jpg",
-    "static/media/shareplate.jpg": "/tydangelowebsite/static/media/shareplate.deb9c7e39e79a2c9446b.jpg",
-    "index.html": "/tydangelowebsite/index.html",
-    "main.aa2feaf2.css.map": "/tydangelowebsite/static/css/main.aa2feaf2.css.map",
-    "main.e7a9e2ab.js.map": "/tydangelowebsite/static/js/main.e7a9e2ab.js.map"
+    "main.css": "/static/css/main.85cae6ce.css",
+    "main.js": "/static/js/main.494774f8.js",
+    "static/media/bol.jpg": "/static/media/bol.b568d8d4d6e19e9a2dce.jpg",
+    "static/media/hello.jpg": "/static/media/hello.728c35c806b599f605e4.jpg",
+    "static/media/me.jpg": "/static/media/me.12df56afd16497a0a87c.jpg",
+    "static/media/shareplate.jpg": "/static/media/shareplate.deb9c7e39e79a2c9446b.jpg",
+    "index.html": "/index.html",
+    "main.85cae6ce.css.map": "/static/css/main.85cae6ce.css.map",
+    "main.494774f8.js.map": "/static/js/main.494774f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa2feaf2.css",
-    "static/js/main.e7a9e2ab.js"
+    "static/css/main.85cae6ce.css",
+    "static/js/main.494774f8.js"
   ]
 }
