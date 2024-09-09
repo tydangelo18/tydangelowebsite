@@ -1,0 +1,51 @@
+.icons a {
+  position: relative;
+  color: #f3f3f3;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.icons a:not(:last-child) {
+  margin-right: 50px;
+}
+
+.icons a:hover {
+  transform: scale(1.5);
+}
+
+.linkedInBtn {
+  position: relative;
+
+  padding: 10px;
+  animation-name: linkedin;
+  animation-duration: 3s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+}
+
+.gitHubBtn {
+  position: relative;
+
+  padding: 10px;
+  animation-name: github;
+  animation-duration: 3s;
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+}
+
+.emailBtn {
+  position: relative;
+
+  padding: 10px;
+  animation-name: email;
+  animation-duration: 3s;
+  animation-delay: 2.85s;
+  animation-fill-mode: forwards;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+}

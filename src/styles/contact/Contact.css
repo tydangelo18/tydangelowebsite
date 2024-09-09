@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0c0c0c;
+  color: #f3f3f3;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 3;
+}
+
+.headingDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dividerDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 85px;
+}
+
+.contactDivider {
+  width: 120px;
+  border: none;
+  height: 1px;
+  background-color: #f3f3f3;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 650px) {
+  body {
+    line-height: 2;
+  }
+}
