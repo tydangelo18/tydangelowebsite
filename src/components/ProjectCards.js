@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/ProjectCards.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import bol from "../images/bol.jpg";
+import shareplate from "../images/shareplate.jpg";
 
 const ProjectCards = () => {
   return (
@@ -58,8 +59,8 @@ const ProjectCards = () => {
       <div className="cardDiv">
         <div className="projectOne">
           <div className="container" id="bolPic">
-            <img src={bol} alt="springboard" className="image"></img>
-            <img src={bol} alt="springboard" className="altimage"></img>
+            <img src={shareplate} alt="springboard" className="image"></img>
+            <img src={shareplate} alt="springboard" className="altimage"></img>
           </div>
           <div className="projectContent">
             <div className="projectTitle">
@@ -68,7 +69,8 @@ const ProjectCards = () => {
             <div className="projectDesc">
               <p>
                 A social media application for foodies to share their “meal of
-                the day” and interact with other users’ posts.
+                the day” and interact with other users’ posts. Currently in
+                design and development. See Figma link below!
               </p>
             </div>
             <div className="projectdividerDiv">
@@ -81,10 +83,13 @@ const ProjectCards = () => {
               </p>
             </div>
             <div className="projectLinks">
-              <a href="https://tydangelo18.github.io/shareplate/" target="null">
+              <a
+                href="https://www.figma.com/design/hxKklz94cKNruozfwYHkc4/SharePlate?node-id=0-1&m=dev&t=E6X9CPk0iIsdcHoz-1"
+                target="null"
+              >
                 <FontAwesomeIcon
                   className="linkBtn"
-                  icon={["fas", "link"]}
+                  icon={["fab", "figma"]}
                   size="2x"
                 />
               </a>

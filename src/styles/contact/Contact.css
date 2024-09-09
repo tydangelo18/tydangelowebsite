@@ -19,8 +19,8 @@ body {
 .dividerDiv {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
-  margin-bottom: 85px;
+  margin-top: 85px;
+  margin-bottom: 50px;
 }
 
 .contactDivider {
