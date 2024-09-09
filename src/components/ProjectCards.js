@@ -59,8 +59,8 @@ const ProjectCards = () => {
       <div className="cardDiv">
         <div className="projectOne">
           <div className="container" id="bolPic">
-            <img src={shareplate} alt="springboard" className="image"></img>
-            <img src={shareplate} alt="springboard" className="altimage"></img>
+            <img src={shareplate} alt="shareplate" className="image"></img>
+            <img src={shareplate} alt="shareplate" className="altimage"></img>
           </div>
           <div className="projectContent">
             <div className="projectTitle">
