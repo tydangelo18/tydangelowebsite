@@ -2,18 +2,19 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Logo from "./Logo";
-import Navigation from "./Navigation";
 
-export default function Header() {
+export default function Navigation() {
   return (
-    <Container>
+    <Container style={{ display: "flex", justifyContent: "flex-end" }}>
       <Row>
-        <Col md={8}>
-          <Logo />
+        <Col md={4}>
+          <p>Home</p>
         </Col>
         <Col md={4}>
-          <Navigation />
+          <p>Work</p>
+        </Col>
+        <Col md={4}>
+          <p>Contact</p>
         </Col>
       </Row>
     </Container>
