@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export default function ContentCard({ children, height, bgImage, padding }) {
+export default function ContentCard({ children, height, bgImage, padding, color }) {
   return (
-    <StyledCard height={height} bgImage={bgImage} padding={padding}>
+    <StyledCard height={height} bgImage={bgImage} padding={padding} color={color}>
       {children}
     </StyledCard>
   );
@@ -19,4 +19,5 @@ const StyledCard = styled.div`
   background-size: cover;
   margin: 0.15em 0 1em 0;
   padding: ${(props) => props.padding || "2.25em"};
+  color: ${(props) => props.color || "white"};
 `;

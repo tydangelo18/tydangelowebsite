@@ -2,6 +2,8 @@ import ShareplateMockup from "./shareplate.jpeg";
 import BolMockup from "./bol.png";
 import KwilUi from "./kwilui.jpeg";
 import ShareplateUI from "./shareplateui.jpeg";
+import PostgresqlLogo from "./postgresql.png";
+import NodeTypescriptLogo from "./nodetypescript.png";
 
 export const workCardsContent = [
   {
@@ -13,6 +15,7 @@ export const workCardsContent = [
     title: "bol",
     description: "Bowling progress analytics app",
     backgroundImage: `url(${BolMockup})`,
+    color: "black",
   },
   {
     title: "Block Explorer UI",
@@ -27,10 +30,13 @@ export const workCardsContent = [
   {
     title: "Set up PostgreSQL",
     description: "Set up PostgreSQL via Docker article",
+    backgroundImage: `url(${PostgresqlLogo})`,
   },
   {
     title: "Typescript Server",
     description: "Set up Node server with Typescript article",
+    backgroundImage: `url(${NodeTypescriptLogo})`,
+    color: "black",
   },
 ];
 

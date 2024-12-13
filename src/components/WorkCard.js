@@ -4,14 +4,18 @@ import { SocialButton } from "./DetailsCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-export default function WorkCard({ title, description, bgImage }) {
+export default function WorkCard({ title, description, bgImage, color }) {
   return (
-    <ContentCard padding={"1.75em .25em 0em 1em"} bgImage={bgImage}>
+    <ContentCard
+      padding={"1.75em .25em 0em 1em"}
+      bgImage={bgImage}
+      color={color}
+    >
       <Container>
         <Row>
           <Col sm={10}>
-            <h6 style={{ color: "white"}}>{title}</h6>
-            <p style={{ color: "white"}}>{description}</p>
+            <h6>{title}</h6>
+            <p>{description}</p>
           </Col>
           <Col sm={2}>
             <a

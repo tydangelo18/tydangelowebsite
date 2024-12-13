@@ -13,9 +13,10 @@ export default function DetailsCard({
   marginTop,
   height,
   bgImage,
+  color,
 }) {
   return (
-    <ContentCard height={height} bgImage={bgImage}>
+    <ContentCard height={height} bgImage={bgImage} color={color}>
       <FlexContainerColumn>
         <Title>{title}</Title>
         <Description style={{ marginTop: marginTop }}>

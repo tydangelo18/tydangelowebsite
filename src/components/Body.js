@@ -19,6 +19,7 @@ export default function Body() {
             }
             marginTop={".5em"}
             bgImage={"linear-gradient(to right, #FDFCFB, #E2D1C3)"}
+            color={"black"}
           />
         </Col>
         <Col md={4}>
@@ -36,6 +37,7 @@ export default function Body() {
                   title={card.title}
                   description={card.description}
                   bgImage={card.backgroundImage}
+                  color={card.color}
                 />
               </Col>
             ))}
@@ -54,6 +56,7 @@ export default function Body() {
             email={"tydangelo18@gmail.com"}
             height={"22em"}
             bgImage={"linear-gradient(to right, #FDFCFB, #E2D1C3)"}
+            color={"black"}
           />
         </Col>
       </Row>
