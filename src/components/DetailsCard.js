@@ -87,7 +87,7 @@ const ContactButton = styled.button`
   }
 `;
 
-const SocialButton = styled.button`
+export const SocialButton = styled.button`
   margin-right: 0.75em;
   margin-right: 0.75em;
   background-color: white;
@@ -97,7 +97,7 @@ const SocialButton = styled.button`
   border: none;
   border-radius: 50%;
   &:hover {
-    color: white;
+    color: ${(props) => props.color || "white"};
     background-color: ${(props) => props.hoverColor};
   }
 `;

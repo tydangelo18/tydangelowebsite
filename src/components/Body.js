@@ -1,13 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import DetailsCard from "./DetailsCard";
-import Pic from "./Pic";
-import Shareplate from "./Shareplate";
-import Bol from "./Bol";
-import Kwil from "./Kwil";
-import ShareplateUI from "./ShareplateUI";
-import Medium1 from "./Medium1";
-import Medium2 from "./Medium2";
+import ImageCard from "./ImageCard";
+import WorkCard from "./WorkCard";
+import { groupedCards } from "./utils";
 
 export default function Body() {
   return (
@@ -26,33 +22,27 @@ export default function Body() {
           />
         </Col>
         <Col md={4}>
-          <Pic />
+          <ImageCard />
         </Col>
       </Row>
-      <Row>
-        <Col md={6}>
-          <Shareplate />
-        </Col>
-        <Col md={6}>
-          <Bol />
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6}>
-          <Kwil />
-        </Col>
-        <Col md={6}>
-          <ShareplateUI />
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6}>
-          <Medium1 />
-        </Col>
-        <Col md={6}>
-          <Medium2 />
-        </Col>
-      </Row>
+
+      {/* Work Cards */}
+      {groupedCards.map((group, rowIndex) => {
+        return (
+          <Row key={rowIndex}>
+            {group.map((card, colIndex) => (
+              <Col md={6} key={colIndex}>
+                <WorkCard
+                  title={card.title}
+                  description={card.description}
+                  bgImage={card.backgroundImage}
+                />
+              </Col>
+            ))}
+          </Row>
+        );
+      })}
+
       <Row>
         <Col md={12}>
           <DetailsCard
