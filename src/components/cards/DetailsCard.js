@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import styled from "@emotion/styled";
-import Mailto from "./Mailto";
+import Mailto from "../utils/Mailto";
 
 export default function DetailsCard({
   title,
@@ -32,7 +32,7 @@ export default function DetailsCard({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SocialButton hoverColor="#171515">
+            <SocialButton hoverBgColor="#171515">
               <FontAwesomeIcon icon={faGithub} size="lg" />
             </SocialButton>
           </a>
@@ -42,7 +42,7 @@ export default function DetailsCard({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SocialButton hoverColor="#0077B5">
+            <SocialButton hoverBgColor="#0077B5">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </SocialButton>
           </a>
@@ -98,7 +98,7 @@ export const SocialButton = styled.button`
   border: none;
   border-radius: 50%;
   &:hover {
-    color: ${(props) => props.color || "white"};
-    background-color: ${(props) => props.hoverColor};
+    color: ${(props) => props.hoverColor || "white"};
+    background-color: ${(props) => props.hoverBgColor};
   }
 `;

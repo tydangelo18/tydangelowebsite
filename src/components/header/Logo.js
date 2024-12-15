@@ -13,7 +13,7 @@ export default function Logo() {
 const YellowCircle = styled.div`
   width: 1.5em;
   height: 1.5em;
-  background-color: orange;
+  background: linear-gradient(to right, #e5c79f 50%, #20254f 50%);
   border-radius: 50%;
 `;
 

@@ -4,7 +4,14 @@ import { SocialButton } from "./DetailsCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-export default function WorkCard({ title, description, bgImage, color }) {
+export default function WorkCard({
+  title,
+  description,
+  bgImage,
+  color,
+  hoverColor,
+  externalLink,
+}) {
   return (
     <ContentCard
       padding={"1.75em .25em 0em 1em"}
@@ -18,12 +25,8 @@ export default function WorkCard({ title, description, bgImage, color }) {
             <p>{description}</p>
           </Col>
           <Col sm={2}>
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SocialButton color="black">
+            <a href={externalLink} target="_blank" rel="noopener noreferrer">
+              <SocialButton hoverColor={hoverColor} hoverBgColor={"black"}>
                 <FontAwesomeIcon icon={faLink} size="lg" />
               </SocialButton>
             </a>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import DetailsCard from "./DetailsCard";
-import ImageCard from "./ImageCard";
-import WorkCard from "./WorkCard";
-import { groupedCards } from "./utils";
+import DetailsCard from "./cards/DetailsCard";
+import ImageCard from "./cards/ImageCard";
+import WorkCard from "./cards/WorkCard";
+import { groupedCards } from "./utils/utils";
 
 export default function Body() {
   return (
@@ -18,7 +18,7 @@ export default function Body() {
               "I care a lot about design for positive impact, and enjoy creating user-centric, delightful, and human experiences"
             }
             marginTop={".5em"}
-            bgImage={"linear-gradient(to right, #FDFCFB, #E2D1C3)"}
+            bgImage={"linear-gradient(to right, #FDFCFB, #E5C79F)"}
             color={"black"}
           />
         </Col>
@@ -38,6 +38,8 @@ export default function Body() {
                   description={card.description}
                   bgImage={card.backgroundImage}
                   color={card.color}
+                  hoverColor={card.hoverColor}
+                  externalLink={card.externalLink}
                 />
               </Col>
             ))}
