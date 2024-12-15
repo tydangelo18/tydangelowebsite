@@ -8,60 +8,66 @@ import { groupedCards } from "./utils/utils";
 export default function Body() {
   return (
     <Container>
-      <Row>
-        <Col md={8}>
-          <DetailsCard
-            title={
-              "Hello, I'm Ty, a software engineer with 3 years of experience."
-            }
-            description={
-              "I care a lot about design for positive impact, and enjoy creating user-centric, delightful, and human experiences"
-            }
-            marginTop={".5em"}
-            bgImage={"linear-gradient(to right, #FDFCFB, #E5C79F)"}
-            color={"black"}
-          />
-        </Col>
-        <Col md={4}>
-          <ImageCard />
-        </Col>
-      </Row>
+      <section id="home">
+        <Row>
+          <Col md={8}>
+            <DetailsCard
+              title={
+                "Hello, I'm Ty, a software engineer with 3 years of experience."
+              }
+              description={
+                "I care a lot about design for positive impact, and enjoy creating user-centric, delightful, and human experiences"
+              }
+              marginTop={".5em"}
+              bgImage={"linear-gradient(to right, #FDFCFB, #E5C79F)"}
+              color={"black"}
+            />
+          </Col>
+          <Col md={4}>
+            <ImageCard />
+          </Col>
+        </Row>
+      </section>
 
       {/* Work Cards */}
-      {groupedCards.map((group, rowIndex) => {
-        return (
-          <Row key={rowIndex}>
-            {group.map((card, colIndex) => (
-              <Col md={6} key={colIndex}>
-                <WorkCard
-                  title={card.title}
-                  description={card.description}
-                  bgImage={card.backgroundImage}
-                  color={card.color}
-                  hoverColor={card.hoverColor}
-                  externalLink={card.externalLink}
-                />
-              </Col>
-            ))}
-          </Row>
-        );
-      })}
+      <section id="work">
+        {groupedCards.map((group, rowIndex) => {
+          return (
+            <Row key={rowIndex}>
+              {group.map((card, colIndex) => (
+                <Col md={6} key={colIndex}>
+                  <WorkCard
+                    title={card.title}
+                    description={card.description}
+                    bgImage={card.backgroundImage}
+                    color={card.color}
+                    hoverColor={card.hoverColor}
+                    externalLink={card.externalLink}
+                  />
+                </Col>
+              ))}
+            </Row>
+          );
+        })}
+      </section>
 
-      <Row>
-        <Col md={12}>
-          <DetailsCard
-            title={"Want to work together?"}
-            description={
-              "Feel free to reach out for collaborations or just a friendly hello"
-            }
-            marginTop={".5em"}
-            email={"tydangelo18@gmail.com"}
-            height={"22em"}
-            bgImage={"linear-gradient(to right, #FDFCFB, #E2D1C3)"}
-            color={"black"}
-          />
-        </Col>
-      </Row>
+      <section id="contact">
+        <Row>
+          <Col md={12}>
+            <DetailsCard
+              title={"Want to work together?"}
+              description={
+                "Feel free to reach out for collaborations or just a friendly hello"
+              }
+              marginTop={".5em"}
+              email={"tydangelo18@gmail.com"}
+              height={"22em"}
+              bgImage={"linear-gradient(to right, #FDFCFB, #E2D1C3)"}
+              color={"black"}
+            />
+          </Col>
+        </Row>
+      </section>
     </Container>
   );
 }
