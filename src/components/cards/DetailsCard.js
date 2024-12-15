@@ -68,6 +68,9 @@ const FlexContainerRow = styled.div`
 const Title = styled.h1`
   text-wrap: pretty;
   padding-right: 4em;
+  @media (max-width: 1000px) {
+    font-size: 1.75em;
+  }
 `;
 
 const Description = styled.p`

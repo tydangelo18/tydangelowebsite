@@ -20,11 +20,11 @@ export default function WorkCard({
     >
       <Container>
         <Row>
-          <Col sm={10}>
+          <Col xs={10} sm={10} md={9} lg={10} xl={10} xxl={10}>
             <h6>{title}</h6>
             <p>{description}</p>
           </Col>
-          <Col sm={2}>
+          <Col xs={2} sm={2} md={3} lg={2} xl={2} xxl={2}>
             <a href={externalLink} target="_blank" rel="noopener noreferrer">
               <SocialButton hoverColor={hoverColor} hoverBgColor={"black"}>
                 <FontAwesomeIcon icon={faLink} size="lg" />

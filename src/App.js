@@ -16,4 +16,13 @@ const AppBody = styled.div`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  @media (max-width: 1500px) {
+    margin: 1% 15% 5% 15%;
+  }
+  @media (max-width: 1200px) {
+    margin: 1% 12% 5% 12%;
+  }
+  @media (max-width: 767px) {
+    margin: 1% 5% 5% 5%;
+  }
 `;
