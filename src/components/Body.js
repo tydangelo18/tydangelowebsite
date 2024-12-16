@@ -16,7 +16,7 @@ export default function Body() {
                 "Hello, I'm Ty, a software engineer with 3 years of experience."
               }
               description={
-                "I care a lot about design for positive impact, and enjoy creating user-centric, delightful, and human experiences"
+                "I am a creative designer, lifelong learner, and AI enthusiast"
               }
               marginTop={".5em"}
               bgImage={"linear-gradient(to right, #FDFCFB, #E5C79F)"}
