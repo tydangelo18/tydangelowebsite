@@ -9,10 +9,10 @@ export default function Header() {
   return (
     <Container>
       <Row>
-        <Col md={8}>
+        <Col xs={10} sm={10} md={7}>
           <Logo />
         </Col>
-        <Col md={4}>
+        <Col xs={2} sm={2} md={5}>
           <Navigation />
         </Col>
       </Row>

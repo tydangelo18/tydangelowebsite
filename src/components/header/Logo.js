@@ -21,4 +21,7 @@ const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+  @media (max-width: 767px) {
+    margin-top: .35em;
+  }
 `;
