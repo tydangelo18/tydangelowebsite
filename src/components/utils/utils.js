@@ -42,7 +42,8 @@ export const workCardsContent = [
     description: "Set up PostgreSQL via Docker article",
     backgroundImage: `url(${PostgresqlLogo})`,
     hoverColor: "#0091FF",
-    externalLink: "https://www.google.com",
+    externalLink:
+      "https://medium.com/@tydangelo18/setting-up-postgresql-for-development-using-docker-a-beginner-friendly-guide-cee58065bb28",
   },
   {
     title: "Typescript Server",
@@ -50,7 +51,8 @@ export const workCardsContent = [
     backgroundImage: `url(${NodeTypescriptLogo})`,
     color: "black",
     hoverColor: "#D4D8DA",
-    externalLink: "https://www.google.com",
+    externalLink:
+      "https://medium.com/@tydangelo18/setting-up-a-node-server-with-express-and-typescript-5fb7539e7449",
   },
 ];
 
